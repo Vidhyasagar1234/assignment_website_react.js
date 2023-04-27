@@ -1,0 +1,108 @@
+.Footer{
+    bottom: 0;
+    height: auto;
+    background-color: #05a0e8;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+}
+.sb__footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+.sb__footer-links_add_div{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    color:antiquewhite;
+    padding: 5px;
+}
+.sb__footer-links_add_div h1{
+    font-size: 30px;
+    font-weight:lighter;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+    color: black;
+}
+.sb__footer-links_address{
+    padding: 5px 0;
+}
+.sb__footer-links_address h4{
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: rgb(56, 54, 54);
+}
+.sb__footer-links_address p{
+    font-size: 13px;
+}
+
+.sb__footer-links_div{
+    height: auto;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+.sb__footer-links_div h4{
+    padding: 5px 10px;
+}
+.sb__footer-links_div a{
+    text-decoration: none;
+    display: flex;
+    padding: 7px 30px ;
+    align-items: center;
+    color: #05529aeb;
+}
+.sb__footer-links_div a>p{
+    font-size: 13px;
+    padding: 5px 15px;
+    color: #fff;
+    border-left:2px solid #05529aeb;
+    border-right:2px solid #05529aeb;
+    border-radius: 15px;
+    margin-left: 3px;
+}
+.sb__footer-links_div a>p:hover{
+    color: #05529aeb;
+}
+.copy-below{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+}
+.copy-links>a{
+    padding: 0 10px;
+    font-size: 25px;
+    color: #05529aeb;
+}
+.copy-links>a:hover{
+    color: #023a6eeb;
+}
+.copy-rights{
+    color: #fff;
+    font-size: 15px;
+}
+
+/* ------------Responsive footer------------- */
+
+@media only screen and (max-width : 860px){
+    .sb__footer-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sb__footer-links_add_div{
+        width: 100%;
+    }
+    .sb__footer-links_div{
+        width: 100%;
+    }
+    .copy-below{
+        flex-direction: column;
+    }
+}

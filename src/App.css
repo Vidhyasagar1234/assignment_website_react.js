@@ -1,0 +1,361 @@
+.thankyou, .notfound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 90vh;
+}
+
+.sb__main-body{
+  width: 100%;
+  margin: 20px 0;
+}
+.sb__background{
+  background: url(./assets/body.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.sb__background-content{
+  background-color:rgba(0, 0, 0, 0.507);
+  color: #fff;
+  height: 450px;
+  padding-top: 80px;
+  padding-left: 30px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.sb__background-content>h3{
+  padding: 15px 0;
+  font-size: 25px;
+}
+.sb__background-content>h5{
+  width: 50%;
+}
+.sb__background-content>p{
+  font-size: 25px;
+}
+.about-links{
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-links{
+  width: 150px;
+  height: 30px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about-links:hover{
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in;
+}
+
+/* -------------works section------------ */
+
+.body-work{
+  margin: 20px;
+  padding: 30px 120px;
+  background-color:#05a0e8;
+  border-radius: 20px;
+}
+.body-work>p{
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.body-work-links1{
+  display: flex;
+}
+.body-work-links2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.body-work-links1>img , .body-work-links2>img{
+  display: flex;
+  max-width: 50%;
+  border-radius: 10px;
+  border:5px solid #05529aeb;
+}
+.body-work-links-content{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.body-work-links-content>p{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 130%;
+}
+
+@media only screen and (max-width:960px){
+  .body-work-links1, .body-work-links2{
+    display: flex;
+    flex-direction: column;
+  }
+  .body-work-links1>img, .body-work-links2>img{
+    max-width: 100%;
+  }
+  .body-work{
+    padding: 30px;
+  }
+}
+
+/* -------------------------Services ----------------*/
+
+.service-head{
+  margin: 20px;
+  padding: 20px;
+  background-color: #05a0e8;
+  border-radius: 10px;
+}
+.service-head>p{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+.service-links{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sb__service-links{
+  width: 28%;
+  margin: 20px;
+}
+.sb__service-links>span{
+  font-size: 35px;
+  color: #05529aeb;
+}
+.sb__service-links>h2{
+  color: #fff;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.sb__service-links>p{
+  color: #fff;
+  padding-right: 45px;
+  text-align: justify;
+  line-height: 150%;
+}
+.sb__service-links>h2:hover{
+  color: #05529aeb;
+}
+
+@media only screen and (max-width:1000px){
+  .sb__service-links{
+    width: 40%;
+  }
+}
+@media only screen and (max-width:710px){
+  .sb__service-links{
+    width: 100%;
+  }
+}
+
+/* -------------------- About Us--------------------- */
+
+.main-about{
+  margin: 20px;
+  padding: 20px;
+  background-color: #05a0e8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.main-about>img{
+  margin-bottom: 10px;
+  width: 45%;
+  border-radius: 20px;
+  border: 5px solid #05529aeb;
+}
+.sb__about-links>h1{
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
+.sb__about-links>p{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 140%;
+  color: #fff;
+}
+@media only screen and (max-width: 1000px){
+  .main-about{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-about>img{
+    width: 100%;
+  }
+  .sb__about-links>p{
+    padding-right: 10px;
+  }
+}
+
+/* ------------------------ Contact Us----------------- */
+
+.form_link{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+.form_list{
+  border-radius: 10px;
+  background-color:#fff;
+  border: 5px solid #05529aeb;
+  margin: 30px;
+  padding: 20px 50px;
+  max-width: 600px;
+  max-height: 700px;
+  width: 600px;
+  box-shadow: 0px 0px 5px 2px gray;
+}
+.form_list span{
+  color: #05a0e8;
+}
+.form_list input,textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+.form_list input:hover,textarea:hover{
+  border: 1px solid #05529aeb;
+}
+.form_list button{
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #05a0e8;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.form_list button:hover{
+  background-color: #05529aeb;
+  transition: all .3s ease-out;
+}
+
+/* -------Blogs------ */
+
+.app{
+  margin: 30px;
+  text-align: center;
+}
+.app>h1>span{
+  color: #05a0e8;
+}
+.search{
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 10px;
+  width: 50%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+.search:focus{
+  border: 1px solid #05529aeb;
+}
+table{
+  margin: 20px 0;
+  border: 2px solid #05529aeb;
+  background-color: #eee;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 10px;
+  text-align: justify;
+  cursor: pointer;
+}
+.blog_id{
+  height: 30px;
+  text-align: start; 
+  width: 7%;
+  padding-left: 10px;
+  padding: 10px;
+}
+.blog_title{
+  height: 30px;
+  text-align: start; 
+  padding: 10px;
+  width: 30%;
+}
+.blog_data{
+  padding-left: 10px;
+  text-align: start; 
+  padding: 10px;
+  height: 30px;
+  width: 60%;
+}
+
+/* ----------------- Sign Up ------------- */
+
+.signup_app{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 90vh; */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  ), url(./assets/Signup.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+form{
+  background-color: #fff;
+  padding: 20px 60px;
+  border-radius: 10px;
+  height: auto;
+  margin: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  margin: 10px 0;
+}
+form>h1>span{
+  color: #05a0e8;
+}
+.sign_btn{
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #05a0e8;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.sign_btn:hover{
+  background-color: #05529aeb;
+  transition: all .3s ease;
+}
+label{
+  font-size: 13px;
+}
+
+/* ------------- The End ----------- */
